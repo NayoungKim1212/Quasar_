@@ -1,21 +1,21 @@
 <template>
     <q-layout view="hHh lpR fFf">
 
-        <q-header elevated class="bg-primary text-white">
+        <q-header bordered class="bg-white text-grey-9">
             <q-toolbar>
-                <q-toolbar-title>
+                <q-btn flat dense>
+                    <q-toolbar-title>
 
-                    <q-avatar>
-                        <img src="https://cdn.quasar.dev/logo-v2/svg/logo-mono-white.svg">
-                    </q-avatar>
-                    Title
-                </q-toolbar-title>
-                <q-btn stretch flat label="Link" />
-                <q-separator dark vertical />
-                <q-btn stretch flat label="Link" />
-                <q-btn stretch flat label="Link" />
-                <q-separator dark vertical />
-                <q-btn stretch flat label="Link" />
+                        <q-avatar>
+                            <img src="/logo.png">
+                        </q-avatar>
+                        Happy Market
+                    </q-toolbar-title>
+                </q-btn>
+                <q-space />
+                <q-btn stretch flat label="장보기" href="https://shopping.naver.com/market/emart/home" target="_blank" />
+                <q-separator class="q-my-md q-mr-md" vertical />
+                <q-btn unelvaled rounded color="primary" label="로그인 / 회원가입" />
             </q-toolbar>
         </q-header>
 
