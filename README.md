@@ -1,6 +1,6 @@
 # Vue3 Quasar App (vue3-quasar-app)
 
-## posts(커뮤니티 목록 만들)
+## posts(커뮤니티 목록 만들기)
 
 1. 메인 페이지
  
