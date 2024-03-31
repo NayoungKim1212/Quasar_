@@ -1,5 +1,6 @@
 <template>
-    <q-layout view="hhh lpR fFf" class="bg-grey-2">
+    <q-layout view="hHh lpR fFf" class="bg-grey-2">
+        <!--H: 아래로 스크롤 하면 Header 고정, h: Header 비고정 --->
         <q-header bordered class="bg-white text-grey-9">
             <q-toolbar>
                 <q-btn flat dense to="/"> <!--그림자를 제거하기 위해 flat, 버튼을 조금 더 얇게 만들기 위해 dense-->
