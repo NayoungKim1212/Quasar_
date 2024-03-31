@@ -1,16 +1,19 @@
 <template>
-    <div>
+    <q-page padding>
         <div class="text-h4">Home</div>
-    </div>
-    <div>
-        {{ $route.name }}
-    </div>
+        <section class="q-qutter-y-sm q-mt-lg">
+            <!--<q-card v-for="id in 100" :key="id" @click="goPostDetails(id)"></q-card>-->
+            <q-card v-for="id in 100" :key="id"> <!--1부터 100까지 순회, 각 id에 대해 <q-card> 컴포넌트를 생성-->
+                <router-link :to="`/posts/${id}`">
+                    <q-card-section>
+                        {{ id }}번 게시글</q-card-section>
+                </router-link>
+            </q-card>
+        </section>
+    </q-page>
 </template>
 
 <script>
-export default {
-
-}
 </script>
 
 <style lang="scss" scoped></style>
@@ -19,4 +22,5 @@ export default {
     name: home-page
     meta:
       requireAuth: true
+      width: 600px
 </route>

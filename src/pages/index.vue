@@ -6,7 +6,7 @@
             <q-card v-for="id in 100" :key="id"> <!--1부터 100까지 순회, 각 id에 대해 <q-card> 컴포넌트를 생성-->
                 <router-link :to="`/posts/${id}`">
                     <q-card-section>
-                        {{ id }}게시글</q-card-section>
+                        {{ id }}번 게시글</q-card-section>
                 </router-link>
             </q-card>
         </section>
