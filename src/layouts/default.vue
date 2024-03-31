@@ -39,7 +39,7 @@ import AuthDialog from 'src/components/auth/AuthDialog.vue'
 const route = useRoute();
 
 const pageContainerStyles = computed(() => ({
-    maxWidth: route.meta?.width || '1080px',
+    maxWidth: route.meta?.width || '1080px', // route에 meta에 width가 있으면 해당 width 적용 없으면 1080px 적용
     margin: '0 auto'
 }));
 
