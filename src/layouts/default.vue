@@ -10,18 +10,15 @@
                         Happy Market
                     </q-toolbar-title>
                 </q-btn>
-                <q-space /> <!--버튼에 의해 컴포넌트가 한 쪽으로 쏠렸을 경우 사용-->
+                <q-space />
                 <q-btn stretch flat label="Home" to="home" />
                 <q-space /> <!--버튼에 의해 컴포넌트가 한 쪽으로 쏠렸을 경우 사용-->
-                <q-btn 
-                stretch 
-                flat 
-                label="장보기" 
-                href="https://shopping.naver.com/market/emart/home" 
-                target="_blank" />
+                <q-btn stretch flat label="리빙윈도" href="https://shopping.naver.com/living/homeliving/home" target="_blank" />
+                <q-btn stretch flat label="푸드윈도" href="https://shopping.naver.com/fresh/directfarm/home" target="_blank" />
+                <q-btn stretch flat label="장보기" href="https://shopping.naver.com/market/emart/home" target="_blank" />
                 <!---외부 링크로 연결 시 새 창을 띄워 보내기 위해 target="_blank" 사용-->
                 <q-separator class="q-my-md q-mr-md" vertical />
-                <q-btn unelvaled rounded color="primary" label="로그인 / 회원가입" @click="openAuthDialog"/>
+                <q-btn unelvaled rounded color="primary" label="로그인 / 회원가입" @click="openAuthDialog" />
                 <!---그림자 제거를 위해 unelvaled, 둥글게 표현하기 위해 rounded-->
             </q-toolbar>
         </q-header>
@@ -34,8 +31,8 @@
 </template>
 
 <script setup>
-import {computed, ref} from 'vue';
-import {useRoute} from 'vue-router';
+import { computed, ref } from 'vue';
+import { useRoute } from 'vue-router';
 import AuthDialog from 'src/components/auth/AuthDialog.vue'
 
 const route = useRoute();
@@ -45,7 +42,7 @@ const pageContainerStyles = computed(() => ({
     margin: '0 auto'
 }));
 
-const authDialog = ref(true);
+const authDialog = ref(true); // 자동으로 팝업을 띄움(새로고침할 때마다 띄움)
 const openAuthDialog = () => (authDialog.value = true);
 
 </script>
