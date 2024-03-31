@@ -43,7 +43,7 @@ const pageContainerStyles = computed(() => ({
     margin: '0 auto'
 }));
 
-const authDialog = ref(true); // 자동으로 팝업을 띄움(새로고침할 때마다 띄움)
+const authDialog = ref(true); // true일 경우 자동으로 팝업을 띄움(새로고침할 때마다 띄움)
 const openAuthDialog = () => (authDialog.value = true);
 
 </script>
