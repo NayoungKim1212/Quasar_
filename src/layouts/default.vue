@@ -12,7 +12,7 @@
                     </q-toolbar-title>
                 </q-btn>
                 <q-space />
-                <q-btn stretch flat label="Home" to="home" />
+                <q-btn stretch flat label="Home" to="/home" /> <!--router를 통해 이동할 때는 to-->
                 <q-space /> <!--버튼에 의해 컴포넌트가 한 쪽으로 쏠렸을 경우 사용-->
                 <q-btn stretch flat label="리빙윈도" href="https://shopping.naver.com/living/homeliving/home" target="_blank" />
                 <q-btn stretch flat label="푸드윈도" href="https://shopping.naver.com/fresh/directfarm/home" target="_blank" />
