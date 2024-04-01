@@ -9,7 +9,7 @@
                 <q-btn label="가입하기" class="full-width" unelvaled color="primary" />
             </div>
             <q-separator /> <!---라인이 생성-->
-            <q-btn label="로그인하기" class="full-width" unelvaled flat/>
+            <q-btn label="로그인하기" class="full-width" unelvaled flat @click="$emit('changeView', 'SignInForm')" />
         </q-form>
     </div>
 </template>

@@ -7,8 +7,8 @@
             <div>
                 <q-btn label="로그인하기" class="full-width" unelvaled color="primary" />
                 <div class="flex justify-between">
-                    <q-btn label="비밀번호 찾기" color="secondary" flat dense size="13px" />
-                    <q-btn label="이메일 가입하기" color="secondary" flat dense size="13px" />
+                    <q-btn label="비밀번호 찾기" color="secondary" flat dense size="13px" @click="$emit('changeView', 'FindePasswordForm')"/>
+                    <q-btn label="이메일 가입하기" color="secondary" flat dense size="13px" @click="$emit('changeView', 'SignUpForm')" />
                 </div>
             </div>
             <q-separator /> <!---라인이 생성-->
@@ -18,7 +18,7 @@
 </template>
 
 <script setup>
-
+defineEmits(['changeView']);
 </script>
 
 <style lang="scss" scoped></style>
