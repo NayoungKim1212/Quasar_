@@ -10,7 +10,8 @@
                 <q-btn icon="close" flat rounded dense v-close-popup />
             </q-card-section>
             <q-card-section class="q-px-xl q-pb-xl">
-                <SignInForm />
+            <!--    <SignInForm />-->
+            <SignUpForm />
             </q-card-section>
         </q-card>
     </q-dialog>
